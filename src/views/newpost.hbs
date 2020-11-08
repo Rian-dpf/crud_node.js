@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nova postagem</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h2>Crud Node.js</h2>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section>
+      <form action="/novapostagem/add" method="POST">
+        <label class="mt-3" for="titulo">Título</label>
+        <input class="form-control" type="text" name="titulo" />
+
+        <label class="mt-3" for="conteudo">Conteúdo</label>
+        <textarea class="form-control" type="text" name="conteudo"></textarea>
+
+        <button type="submit" class="btn btn-success mt-3">Postar</button>
+      </form>
+    </section>
+  </div>
+</body>
+
+</html>

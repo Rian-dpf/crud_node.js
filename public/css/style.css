@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+
+  background-color: rgb(27, 27, 27);
+
+  color: #fff;
+}
+
+header {
+  width: 100%;
+  margin: auto;
+
+  border-bottom: 2px solid rgb(56, 56, 56);
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px 20px;
+}
+
+header nav h2 {
+  font-size: 33px;
+  font-weight: normal;
+}
+
+header nav a,
+li {
+  text-decoration: none;
+  list-style: none;
+
+  font-size: 20px;
+
+  color: #fff;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+.card {
+  width: 70%;
+  height: 300px;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 50px;
+
+  border: 1px solid rgb(66, 66, 66);
+  border-radius: 10px;
+}
+
+.card .card-body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+
+  flex-direction: column;
+}
+
+.card .card-body h3 {
+  font-size: 30px;
+  text-align: center;
+
+  margin-bottom: 19px;
+  margin-top: 19px;
+}
+
+.card .card-body p {
+  padding: 0 20px;
+  margin-bottom: 20px;
+
+  text-align: justify;
+}
+
+.buttons {
+  padding: 0 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.card .card-body .buttons a {
+  text-decoration: none;
+}
+
+.card .card-body .buttons a button {
+  width: 80%;
+  margin-top: 20px;
+  margin-bottom: 50px;
+
+  cursor: pointer;
+
+  padding: 10px 20px;
+}
+
+.card .card-body .buttons button + button {
+  margin-left: 10px;
+}

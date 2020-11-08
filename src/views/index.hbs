@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crud Node.js</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h2>Crud Node.js</h2>
+      <a href="/novapostagem">
+        <li>Nova postagem</li>
+      </a>
+    </nav>
+  </header>
+
+  <section>
+    {{#each postagens}}
+    <div class="card">
+      <div class="card-body">
+        <h3>{{this.titulo}}</h3>
+        <p>
+          {{this.conteudo}}
+        </p>
+        <div class="buttons">
+          <a href="/editpost/{{_id}}">
+            <button>Editar postagem</button>
+          </a>
+
+
+          <a href="/delete/{{_id}}">
+            <button>Excluir postagem</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </section>
+</body>
+
+</html>

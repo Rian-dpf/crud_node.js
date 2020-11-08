@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Editar postagem</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h2>Crud Node.js</h2>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>Editar Postagem</h2>
+      <form action="/editpost/edit" method="POST">
+        <input type="hidden" name="id" value="{{postagem._id}}">
+        <label class="mt-3" for="titulo">Título</label>
+        <input class="form-control" type="text" name="titulo" value="{{postagem.titulo}}" />
+
+        <label class="mt-3" for="conteudo">Conteúdo</label>
+        <textarea class="form-control" type="text" name="conteudo">{{postagem.conteudo}}</textarea>
+
+        <button type="submit" class="btn btn-success mt-3">Editar</button>
+      </form>
+    </section>
+  </div>
+</body>
+
+</html>
